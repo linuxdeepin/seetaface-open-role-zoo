@@ -1,0 +1,18 @@
+Source: seetaface-open-role-zoo
+Section: devel
+Priority: optional
+Maintainer: likier <likier@sina.cn>
+Build-Depends:
+ cmake,
+ debhelper (>= 11),
+Standards-Version: 4.5.1
+Homepage: https://github.com/SeetaFace6Open/OpenRoleZoo.git
+Rules-Requires-Root: no
+
+Package: seetaface-open-role-zoo
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: OpenRoleZoo for seetaface
+ OpenRoleZoo is a static library used by seetaface
