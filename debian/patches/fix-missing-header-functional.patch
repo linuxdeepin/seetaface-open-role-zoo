@@ -1,0 +1,10 @@
+--- a/include/orz/mem/pot.h
++++ b/include/orz/mem/pot.h
+@@ -7,6 +7,7 @@
+ 
+ #include <mutex>
+ #include <memory>
++#include <functional>
+ 
+ namespace orz {
+ 
