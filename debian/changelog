@@ -1,3 +1,9 @@
+seetaface-open-role-zoo (1.0.0.2-1+dde) unstable; urgency=medium
+
+  * Add secure compilation options
+
+ --echengqi <echengqi@uniontech.com>  Mon, 24 Jan 2021 13:17:44 +0800
+
 seetaface-open-role-zoo (1.0.0.1-1+dde) unstable; urgency=medium
 
   * Fix missing header file

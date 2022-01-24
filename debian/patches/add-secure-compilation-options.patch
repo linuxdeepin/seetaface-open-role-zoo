@@ -1,0 +1,14 @@
+Index: seetaface-open-role-zoo/CMakeLists.txt
+===================================================================
+--- seetaface-open-role-zoo.orig/CMakeLists.txt
++++ seetaface-open-role-zoo/CMakeLists.txt
+@@ -7,6 +7,9 @@ option(ORZ_INSTALL "Supporting install s
+ set(SOLUTION_DIR ${CMAKE_CURRENT_SOURCE_DIR})
+ add_definitions(-DORZ_SOLUTION_DIR="${SOLUTION_DIR}")
+ 
++# add secure compilation options
++set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -fstack-protector-all -z relro -z noexecstack -z now -pie")
++
+ # dir for common cmake files
+ list(APPEND CMAKE_MODULE_PATH ${SOLUTION_DIR}/cmake)
+ list(APPEND CMAKE_PREFIX_PATH ${SOLUTION_DIR}/cmake)
